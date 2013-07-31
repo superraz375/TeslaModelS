@@ -84,7 +84,7 @@
         }
         
         NSString *option2 = [option substringWithRange:NSMakeRange(0, 2)];
-        NSString *value2 = [option substringWithRange:NSMakeRange(2, 4)];
+        NSString *value2 = [option substringWithRange:NSMakeRange(2, 2)];
         
         if ([option2 isEqualToString:@"MS"])
         {
@@ -242,7 +242,7 @@
         }
         
         NSString *option3 = [option substringWithRange:NSMakeRange(0, 1)];
-        NSString *value3 = [option substringWithRange:NSMakeRange(1, 4)];
+        NSString *value3 = [option substringWithRange:NSMakeRange(1, 3)];
         
         if ([option3 isEqualToString:@"P"])
         {

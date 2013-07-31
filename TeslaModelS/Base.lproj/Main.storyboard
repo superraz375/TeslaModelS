@@ -24,7 +24,7 @@
                                 <rect key="frame" x="2" y="0.0" width="320" height="239"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="right_rear_open.png" translatesAutoresizingMaskIntoConstraints="NO" id="HOe-dd-fNm">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="black_right_rear_open.png" translatesAutoresizingMaskIntoConstraints="NO" id="HOe-dd-fNm">
                                 <rect key="frame" x="171" y="49" width="26" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -32,7 +32,7 @@
                                 <rect key="frame" x="173" y="65" width="53" height="42"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="right_front_open.png" translatesAutoresizingMaskIntoConstraints="NO" id="3ZX-oa-UrW">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="black_right_front_open.png" translatesAutoresizingMaskIntoConstraints="NO" id="3ZX-oa-UrW">
                                 <rect key="frame" x="110" y="42" width="33" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -40,15 +40,15 @@
                                 <rect key="frame" x="117" y="66" width="58" height="43"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="body.png" translatesAutoresizingMaskIntoConstraints="NO" id="AL3-uy-aWa">
+                            <imageView userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="black_body.png" translatesAutoresizingMaskIntoConstraints="NO" id="AL3-uy-aWa">
                                 <rect key="frame" x="26" y="54" width="256" height="101"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="trunk_closed.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ptm-va-fqD">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="black_trunk_closed.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ptm-va-fqD">
                                 <rect key="frame" x="216" y="58" width="65" height="58"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="trunk_open.png" translatesAutoresizingMaskIntoConstraints="NO" id="kLB-ne-Q6y">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="black_trunk_open.png" translatesAutoresizingMaskIntoConstraints="NO" id="kLB-ne-Q6y">
                                 <rect key="frame" x="218" y="31" width="80" height="58"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -72,7 +72,7 @@
                                 <rect key="frame" x="263" y="75" width="19" height="25"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="roof.png" translatesAutoresizingMaskIntoConstraints="NO" id="0FE-YQ-p7Z">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="black_roof.png" translatesAutoresizingMaskIntoConstraints="NO" id="0FE-YQ-p7Z">
                                 <rect key="frame" x="136" y="54" width="89" height="31"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -84,27 +84,27 @@
                                 <rect key="frame" x="50" y="125" width="33" height="29"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="left_rear_closed.png" translatesAutoresizingMaskIntoConstraints="NO" id="CWc-qj-6X8">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="black_left_rear_closed.png" translatesAutoresizingMaskIntoConstraints="NO" id="CWc-qj-6X8">
                                 <rect key="frame" x="164" y="83" width="63" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="left_rear_open.png" translatesAutoresizingMaskIntoConstraints="NO" id="elg-DY-q0x">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="black_left_rear_open.png" translatesAutoresizingMaskIntoConstraints="NO" id="elg-DY-q0x">
                                 <rect key="frame" x="149" y="89" width="52" height="99"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="left_front_closed.png" translatesAutoresizingMaskIntoConstraints="NO" id="ix5-yy-j2l">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="black_left_front_closed.png" translatesAutoresizingMaskIntoConstraints="NO" id="ix5-yy-j2l">
                                 <rect key="frame" x="102" y="83" width="69" height="60"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="left_front_open.png" translatesAutoresizingMaskIntoConstraints="NO" id="bFX-CV-Yuy">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="black_left_front_open.png" translatesAutoresizingMaskIntoConstraints="NO" id="bFX-CV-Yuy">
                                 <rect key="frame" x="91" y="101" width="50" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="frunk_closed.png" translatesAutoresizingMaskIntoConstraints="NO" id="oTk-nt-yQa">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="black_frunk_closed.png" translatesAutoresizingMaskIntoConstraints="NO" id="oTk-nt-yQa">
                                 <rect key="frame" x="26" y="72" width="78" height="43"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="frunk_open.png" translatesAutoresizingMaskIntoConstraints="NO" id="y8y-SY-bV2">
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="black_frunk_open.png" translatesAutoresizingMaskIntoConstraints="NO" id="y8y-SY-bV2">
                                 <rect key="frame" x="32" y="36" width="71" height="75"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
@@ -917,38 +917,38 @@
         <image name="LoginBackground.png" width="320" height="480"/>
         <image name="LoginLogo.png" width="180" height="27"/>
         <image name="Sound.png" width="26" height="22"/>
-        <image name="body.png" width="256" height="101"/>
+        <image name="black_body.png" width="256" height="101"/>
+        <image name="black_frunk_closed.png" width="78" height="43"/>
+        <image name="black_frunk_open.png" width="71" height="75"/>
+        <image name="black_left_front_closed.png" width="69" height="60"/>
+        <image name="black_left_front_open.png" width="50" height="100"/>
+        <image name="black_left_rear_closed.png" width="63" height="60"/>
+        <image name="black_left_rear_open.png" width="52" height="99"/>
+        <image name="black_right_front_open.png" width="33" height="65"/>
+        <image name="black_right_rear_open.png" width="26" height="55"/>
+        <image name="black_roof.png" width="89" height="31"/>
+        <image name="black_trunk_closed.png" width="65" height="58"/>
+        <image name="black_trunk_open.png" width="80" height="58"/>
         <image name="car_shadow.png" width="320" height="239"/>
         <image name="charge_cable_long.png" width="168" height="57"/>
         <image name="charge_port_closed.png" width="7" height="5"/>
         <image name="charge_port_on.png" width="6" height="6"/>
         <image name="charge_port_open.png" width="7" height="6"/>
-        <image name="frunk_closed.png" width="78" height="43"/>
-        <image name="frunk_open.png" width="71" height="75"/>
-        <image name="left_front_closed.png" width="69" height="60"/>
-        <image name="left_front_open.png" width="50" height="100"/>
-        <image name="left_rear_closed.png" width="63" height="60"/>
-        <image name="left_rear_open.png" width="52" height="99"/>
         <image name="nav_01_home_off.png" width="62" height="34"/>
         <image name="nav_02_loc_off.png" width="62" height="34"/>
         <image name="nav_03_char_off.png" width="62" height="34"/>
         <image name="nav_04_clim_off.png" width="62" height="34"/>
         <image name="nav_05_con_off.png" width="62" height="34"/>
         <image name="right_front_closed.png" width="58" height="43"/>
-        <image name="right_front_open.png" width="33" height="65"/>
         <image name="right_rear_closed.png" width="53" height="42"/>
-        <image name="right_rear_open.png" width="26" height="55"/>
         <image name="rims_dark_front.png" width="33" height="29"/>
         <image name="rims_dark_rear.png" width="33" height="29"/>
-        <image name="roof.png" width="89" height="31"/>
         <image name="spoiler_closed.png" width="19" height="25"/>
         <image name="spoiler_open.png" width="16" height="24"/>
         <image name="spotlight_car.png" width="320" height="239"/>
         <image name="sunroof_closed.png" width="89" height="31"/>
         <image name="sunroof_open.png" width="89" height="31"/>
         <image name="sunroof_vent.png" width="89" height="31"/>
-        <image name="trunk_closed.png" width="65" height="58"/>
-        <image name="trunk_open.png" width="80" height="58"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

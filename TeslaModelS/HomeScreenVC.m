@@ -68,7 +68,12 @@
             _carStateLabel.text = [NSString stringWithFormat:@"%d min remaining", minutes];
         }
         
-        _carStateSubLabel.text = @"2 hr 21 min remaining";
+        _carStateSubLabel.text = @"2 hr 50 min remaining";
+    }
+    else if (model.chargingState && [model.chargingState isEqualToString:@"Complete"])
+    {
+        _carStateLabel.text = @"Charging Complete";
+        _carStateSubLabel.text = @"Time Taken: 6 hr 48 min";
     }
 
 }
