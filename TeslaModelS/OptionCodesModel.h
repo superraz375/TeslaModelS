@@ -119,6 +119,14 @@ typedef enum InteriorDecors {
 @property (nonatomic) BOOL hasHPWC;
 @property (nonatomic) BOOL hasPaintArmor;
 @property (nonatomic) BOOL hasParcelShelf;
+@property (nonatomic) BOOL hasParkingSensors;
+@property (nonatomic) BOOL hasColdWeatherPackage;
+@property (nonatomic) BOOL hasBlindSpotDetection;
+//@property (nonatomic) BOOL hasSecurityProtection; //SP00
+//YF00
+//X009
+//X027
+//X031
 
 - (id) initWithString:(NSString*)optionCodes;
 

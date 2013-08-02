@@ -50,6 +50,10 @@
         {
             _hasPremiumExteriorLighting = NO;
         }
+        else if ([option isEqualToString:@"X009"])
+        {
+            // ???
+        }
         else if ([option isEqualToString:@"X011"])
         {
             _hasHomelink = YES;
@@ -81,6 +85,14 @@
         else if ([option isEqualToString:@"X025"])
         {
             _hasPerformancePowertrain = NO;
+        }
+        else if ([option isEqualToString:@"X027"])
+        {
+            // ???
+        }
+        else if ([option isEqualToString:@"X031"])
+        {
+            // ???
         }
         
         NSString *option2 = [option substringWithRange:NSMakeRange(0, 2)];
@@ -239,6 +251,26 @@
         else if ([option2 isEqualToString:@"PX"])
         {
             _isPerformancePlus = [value2 boolValue];
+        }
+        else if ([option2 isEqualToString:@"PK"])
+        {
+            _hasParkingSensors = [value2 boolValue];
+        }
+        else if ([option2 isEqualToString:@"CW"])
+        {
+            _hasColdWeatherPackage = [value2 boolValue];
+        }
+        else if ([option2 isEqualToString:@"BS"])
+        {
+            _hasBlindSpotDetection = [value2 boolValue];
+        }
+        else if ([option2 isEqualToString:@"SP"])
+        {
+            // Security Protection
+        }
+        else if ([option2 isEqualToString:@"YF"])
+        {
+            // ???
         }
         
         NSString *option3 = [option substringWithRange:NSMakeRange(0, 1)];

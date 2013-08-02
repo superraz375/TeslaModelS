@@ -53,22 +53,25 @@
 {
     ChargeStateModel* model = [TeslaClient sharedClient].chargeStateModel;
     
-    if (model.chargingState && [model.chargingState isEqualToString:@"Charging"])
+    if (model.chargingState && [model.chargingState isEqualToString:@"Charging"] && model.timeUntilFullCharge)
     {
         _carStateLabel.text = @"Charging";
         
-        int hours = 0;
-        int minutes = 0;
+        int hours = [model.timeUntilFullCharge intValue];
+        int minutes = ([model.timeUntilFullCharge doubleValue] - hours) * 60;
         
-        if (hours > 0)
+        if (hours > 0 && minutes == 0)
         {
-            _carStateLabel.text = [NSString stringWithFormat:@"%d hr %d min remaining", hours, minutes];
-        } else if (hours == 0)
-        {
-            _carStateLabel.text = [NSString stringWithFormat:@"%d min remaining", minutes];
+            _carStateSubLabel.text = [NSString stringWithFormat:@"%d hr remaining", hours];
         }
-        
-        _carStateSubLabel.text = @"2 hr 50 min remaining";
+        else if (hours > 0 && minutes > 0)
+        {
+            _carStateSubLabel.text = [NSString stringWithFormat:@"%d hr %d min remaining", hours, minutes];
+        }
+        else if (hours == 0)
+        {
+            _carStateSubLabel.text = [NSString stringWithFormat:@"%d min remaining", minutes];
+        }
     }
     else if (model.chargingState && [model.chargingState isEqualToString:@"Complete"])
     {

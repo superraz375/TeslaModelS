@@ -198,9 +198,9 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{    
+{
     if ([segue.identifier isEqualToString:@"tabSegue"]) {
-        //[segue.destinationViewController setHappiness:100];
+        //[segue.destinationViewController setHappiness:100];    
     } else if ([segue.identifier isEqualToString:@"SelectCarSegue"]) {
         //[segue.destinationViewController setHappiness:0];
     }

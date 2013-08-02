@@ -13,7 +13,8 @@
 #import "Utilities.h"
 
 #ifdef DEBUG
-NSString *const TeslaServerBaseString = @"https://private-857c-timdorr.apiary.io/";
+//NSString *const TeslaServerBaseString = @"https://private-857c-timdorr.apiary.io/";
+NSString *const TeslaServerBaseString = @"https://portal.vn.teslamotors.com/";
 #else
 NSString *const TeslaServerBaseString = @"https://portal.vn.teslamotors.com/";
 #endif
@@ -36,6 +37,7 @@ NSString *const DriveStateNotification = @"DriveStateNotification";
     
     dispatch_once(&onceToken, ^{
         _sharedClient = [[TeslaClient alloc] initWithBaseURL:[NSURL URLWithString:TeslaServerBaseString]];
+        [_sharedClient streamData];
     });
     
     return _sharedClient;
@@ -59,6 +61,33 @@ NSString *const DriveStateNotification = @"DriveStateNotification";
     _driveStateModel = [[DriveStateModel alloc] init];
         
     return self;
+}
+
+- (void) streamData
+{
+    NSString *streamingServer = @"https://streaming.vn.teslamotors.com/stream/";
+    
+    //["056e3a83afd288a7","91dd78baafea5e63"],"state":"online"}]
+    
+    AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:streamingServer]];
+    
+    [client registerHTTPOperationClass:[AFHTTPRequestOperation class]];
+    //[client setDefaultHeader:@"Accept" value:@"application/json"];
+    //[client setParameterEncoding:af];
+    
+    NSString *token = (NSString *) [_teslaVehicleModel.tokens objectAtIndex:0];
+    
+    [client clearAuthorizationHeader];
+    [client setAuthorizationHeaderWithUsername:@"superraz@in-com.com" password:token];
+    [client getPath:@"/?values=speed,soc" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+        //
+        NSLog(@"SUCCESS");
+    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        //
+        NSLog(@"FAILED");
+    }];
+    
+    //NSString *values = @"/?values=speed,odometer,soc,elevation,est_heading,est_lat,est_lng,power,shift_sta te,range,est_range";
 }
 
 - (void) startTimer

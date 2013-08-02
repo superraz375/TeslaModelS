@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="no5-Pi-5eL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="18W-Gx-xjm">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="188"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="166"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="spotlight_car.png" translatesAutoresizingMaskIntoConstraints="NO" id="u0N-3b-tcS">
@@ -956,6 +956,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="f4l-K5-lTL"/>
+        <segue reference="AzZ-tO-l9A"/>
     </inferredMetricsTieBreakers>
 </document>
